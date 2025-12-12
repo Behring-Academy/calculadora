@@ -6,17 +6,25 @@ int main()
     float n1, n2, resultado;
     char continuar;
 
-    printf("===============================\n");
-    printf("   Calculadora Simples   \n");
-    printf("===============================\n");
-    printf("Selecione uma operacao:\n");
-    printf("1. Adicao\n");
-    printf("2. Subtracao\n");
-    printf("3. Multiplicacao\n");
-    printf("4. Divisao\n");
-    printf("5. Sair\n");
-    printf("Opcao: ");
-    scanf("%d", &opcao);
+    do
+    {
+        printf("===============================\n");
+        printf("   Calculadora Simples   \n");
+        printf("===============================\n");
+        printf("Selecione uma operacao:\n");
+        printf("1. Adicao\n");
+        printf("2. Subtracao\n");
+        printf("3. Multiplicacao\n");
+        printf("4. Divisao\n");
+        printf("5. Sair\n");
+        printf("Opcao: ");
+
+        scanf("%d", &opcao);
+
+        if (opcao < 1 || opcao > 5)
+            printf("Opcao invalida. Digite um numero de 1 a 5.\n\n");
+
+    } while (opcao < 1 || opcao > 5);
 
     switch (opcao)
     {
@@ -174,9 +182,6 @@ int main()
     case 5:
         printf("Obrigado por usar a calculadora! Ate a proxima.\n");
         break;
-
-    default:
-        printf("Opcao invalida. Escolha de 1 a 5.\n");
     }
 
     return 0;
