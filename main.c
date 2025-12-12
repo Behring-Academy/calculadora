@@ -6,7 +6,7 @@ int main()
     float n1, n2, resultado;
     char continuar;
 
-    do
+    while (1)
     {
         printf("===============================\n");
         printf("   Calculadora Simples   \n");
@@ -19,12 +19,24 @@ int main()
         printf("5. Sair\n");
         printf("Opcao: ");
 
-        scanf("%d", &opcao);
+        if (scanf("%d", &opcao) != 1)
+        {
+            printf("Opcao invalida. Digite um numero de 1 a 5.\n");
+
+            while (getchar() != '\n')
+                ;
+
+            continue;
+        }
 
         if (opcao < 1 || opcao > 5)
+        {
             printf("Opcao invalida. Digite um numero de 1 a 5.\n\n");
+            continue;
+        }
 
-    } while (opcao < 1 || opcao > 5);
+        break; // opcao válida --> sai do while
+    }
 
     switch (opcao)
     {
