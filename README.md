@@ -81,8 +81,8 @@ caso escolha realizar, o menu inicial será exibido novamente.
 ```bash
 calculadora/
 │── LICENSE
-│── main.c
-└── README.md
+│── README.md
+└── main.c
 ```
 
 ### Descrição dos arquivos
