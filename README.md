@@ -80,6 +80,8 @@ caso escolha realizar, o menu inicial será exibido novamente.
 
 ```bash
 calculadora/
+│── assets/
+│   └── terminal.png
 │── LICENSE
 │── README.md
 └── main.c
@@ -94,5 +96,8 @@ calculadora/
   Arquivo de documentação que explica sobre o projeto.
 
 - LICENSE
-  Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.  
+  Arquivo que define a licença do projeto.
+
+## Licença
+   Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.  
 
